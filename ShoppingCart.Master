@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ShoppingCart.master.cs" Inherits="UI.ShoppingCart" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="ShoppingCart.css" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="header">
+                <h1>M & A SHOPPING CART</h1>
+                </div>
+            <div class="menue">
+            <asp:Menu ID="mainMenu" runat="server" BackColor="#009933" Orientation="Horizontal" Width="100%" Font-Size="X-Large" DisappearAfter="0" ForeColor="White" StaticSelectedStyle-HorizontalPadding="20px">
+                <Items>
+                    <asp:MenuItem NavigateUrl="~/Home.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Category.aspx" Text="Add Category" Value="Add Category"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Product.aspx" Text="Add Product" Value="Add Product"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Products/ViewProducts.aspx" Text="View Product" Value="View Product"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Products/ViewCart.aspx" Text="View Cart" Value="View Cart"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/User/SignIn.aspx" Text="Sign In" Value="Sign In"></asp:MenuItem>
+                </Items>
+<StaticMenuItemStyle HorizontalPadding="10px"/>
+                </asp:Menu>  
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

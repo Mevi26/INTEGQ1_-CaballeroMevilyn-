@@ -1,0 +1,20 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+    background-color: hotpink;
+    color: black;
+}
+
+.header {
+    height: 150px;
+    background-color: hotpink;
+    margin: 0px;
+    margin-top: 0px;
+}
+
+    .header h1 {
+        text-align: center;
+        line-height: 150px;
+        color: black;
+        font-family: Calibri;
+    }
